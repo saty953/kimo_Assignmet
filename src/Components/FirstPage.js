@@ -1,12 +1,16 @@
-import React from 'react'
-import Welcome from './Welcome'
+import React from "react";
+import Welcome from "./Welcome";
+import Highlight from "./Highlight";
+import Category from "./Category";
 
 const FirstPage = () => {
   return (
-    <div>
-    <Welcome/>
-    </div>
-  )
-}
+    <>
+      <Welcome />
+      <Highlight />
+<Category/>
+    </>
+  );
+};
 
-export default FirstPage
+export default FirstPage;

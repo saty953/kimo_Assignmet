@@ -3,14 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function NavbarPage() {
   return (
-    <>
+    <div>
       {['lg'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3 mt-3 rounded-3">
+        <Navbar key={expand} bg="light" expand={expand}  style={{ postion:"absolute" ,top:"15px"}} className="mb-3  rounded-3">
           <Container fluid>
             <Navbar.Brand href="#">Aloha </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -35,7 +34,7 @@ function NavbarPage() {
           </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }
 

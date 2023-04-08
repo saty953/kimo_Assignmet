@@ -1,5 +1,5 @@
 .welcome{
-     position: absolute;
+     position: relative;
 top:0px;
 left: 0px;
 height: 100vh;
@@ -8,6 +8,7 @@ background-repeat: no-repeat;
 width: 100%;
 background-position: center;
 background-size: cover;
+background-attachment: fixed;
 
 }
 
@@ -28,4 +29,5 @@ text-align: center;
 justify-content: center;
 
 background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+
 }
