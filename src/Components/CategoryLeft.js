@@ -8,7 +8,7 @@ const CategoryLeft = () => {
   return (
     <div style={{ width: "100%" ,corsor:"pointer" ,flex:"1"}}>
       <h2 style={{padding:"30px"}}> Category :</h2>
-      {arr.map((ele) => {
+      {arr.map((ele,i) => {
         return (
           <div
             className="category"
@@ -22,6 +22,9 @@ const CategoryLeft = () => {
               borderRadius: "12px",
               margin: "10px",
             }}
+            onClick={()=>{
+              navigate("/details", {state:{ele:ele},key:{i}})
+          }}
           >
             <div
               style={{
@@ -40,7 +43,7 @@ const CategoryLeft = () => {
                     fontSize: "30px",
                   }}
                 onClick={()=>{
-                    navigate("/details", {state:{ele:ele}})
+                    navigate("/details", {state:{ele:ele},key:{i}})
                 }}
            
                 />
